@@ -53,7 +53,7 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
         }
         {
           name: 'MODE' //defines service operation mode: public - when any visitor can create a new basket, or restricted - baskets creation requires master token
-          value: 'public'
+          value: 'restricted'
         }
         {
           name: 'THEME' //CSS theme for web UI, supported values: standard, adaptive, flatly
